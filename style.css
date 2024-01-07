@@ -1,0 +1,219 @@
+*{
+    margin:0;
+    padding:0;
+}
+
+/* @font-face {
+    font-family: ArcadeFont;
+    src: url(./fonts/ARCADECLASSIC.TTF);
+}
+body{
+    font-family: ArcadeFont;
+    word-spacing:1rem;
+} */
+
+body{
+    font-family: 'Baloo Thambi 2', sans-serif;
+}
+
+h1,h2{
+    font-weight: 700;;
+}
+
+h3,h4,h5{
+    font-weight: 600;
+}
+
+.nav-items ul{
+    padding-top: 12px;
+    padding-left: 0;
+}
+
+.nav-items li{
+    margin-right: 18px;
+    list-style: none;
+}
+
+.nav-items a{
+    text-decoration: none;
+    color:black;
+    font-size: 18px;
+    font-weight: 650;
+}
+
+.nav-section{
+    background: silver;
+}
+
+.switch-box{
+    height:20px;
+    width:80px;
+    margin:5px 0;
+    border:1px solid black;
+}
+
+.job-title{
+    font-weight: 700;
+}
+
+.hero-section{
+    border-top:4px solid black;
+    border-bottom:4px solid black ;
+    padding:4rem 0;
+}
+
+.hero-section .container{
+    justify-content: space-between;
+    margin-bottom:3.5rem;
+}
+
+.hero-intro{
+    font-weight: 700;
+    font-size: 5rem;
+    line-height: 4.5rem;
+}
+.hero-img{
+    margin-left:1.5rem;
+    position: relative;
+    left: 10%;
+}
+.hero-profile{
+    width:70%;
+}
+
+.hero-txt{
+    margin-right: 1.5rem;
+    padding-top: 28px;
+}
+
+.hero-content{
+    width:400px;
+}
+
+.cv-btn{
+    padding: 8px 7px;
+    width:150px;
+    background: silver;
+}
+.cv-btn a{
+    text-decoration: none;
+    color: black;
+    font-weight: 600;
+}
+
+.link-title{
+    margin-left:1.8rem;
+}
+
+.quick-links{
+    height:0;
+}
+
+.link-wrapper{
+    bottom:3.5rem;
+    z-index:1;
+}
+
+.mid-nav{
+    bottom:1.5rem;
+    z-index:1;
+}
+
+.mid-nav a{
+    text-decoration: none;
+    color:black;
+    font-weight: 600;
+}
+
+.mid-nav li{
+    width: 22%;
+    height:36px;
+    outline:3px solid black;
+    background: silver;
+    list-style: none;
+    padding: 0.5rem 1rem;
+    display: flex;
+    justify-content: space-between;
+    border-radius: 0;
+}
+
+.skills{
+    background: rgb(236, 232, 232);
+    padding-top:3rem;
+    border-bottom:4px solid black;
+}
+
+.skills-wrapper .row{
+    padding: 1.2rem 5rem;
+}
+
+.tools{
+    padding:0;
+}
+
+.tools-wrapper{
+    justify-content: space-between;
+}
+
+.tools li{
+    list-style: none;
+}
+
+img.arrow{
+    width:12px;
+}
+
+.big-icon{
+    width:64px;
+}
+
+.skill-title{
+    text-transform:uppercase;
+}
+
+.pro{
+    width:450px;
+    height:320px;
+    border: 4px solid black;
+    margin:0 0.8rem;
+}
+
+@media(max-width:900px){
+   
+}
+
+@media(max-width:768px){
+    .skills-wrapper{
+        padding-top: 3rem;
+    }
+
+    .skills-wrapper .row{
+        padding:0.8rem;
+    }
+    .mid-nav li{
+        width:50%;
+    }
+
+    .link-wrapper{
+        margin-left: 9.5rem;
+        bottom: 6rem;
+    }
+}
+
+@media(max-width:500px){
+    .hero-section .container{
+        flex-direction: column;
+    }
+
+    .link-wrapper{
+        margin-left: 6rem;
+    }
+
+    .hero-content{
+        width: 400px;
+    }
+
+  .hero-img{
+    display: block;
+  }
+}
