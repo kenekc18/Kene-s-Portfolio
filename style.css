@@ -74,6 +74,7 @@ h3,h4,h5{
 }
 .hero-img{
     margin-left:1.5rem;
+    margin-top: 1.8rem;
     position: relative;
     left: 10%;
 }
@@ -216,6 +217,8 @@ img.arrow{
     }
     .mid-nav li{
         width:50%;
+        padding:0;
+        padding:0.2rem 1rem;
     }
 
     .link-wrapper{
@@ -223,6 +226,9 @@ img.arrow{
         bottom: 6rem;
     }
     
+    .mid-nav a{
+        font-size: 1.8rem;
+    }
 }
 
 @media(max-width:500px){
@@ -234,11 +240,25 @@ img.arrow{
         margin-left: 6rem;
     }
 
+    .pro{
+        width:25rem;
+    }
+
     .hero-content{
         width: 400px;
     }
 
-  .hero-img{
-    display: block;
-  }
+    .hero-img{
+        display: block;
+    }
+
+}
+
+@media(max-width:400px){
+    .hero-intro{
+        font-size:4rem;
+    }
+    .hero-content{
+        margin:0 3.5rem;
+    }
 }
