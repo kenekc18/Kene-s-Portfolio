@@ -19,12 +19,9 @@ header{
     background: silver;
 }
 
-.nav-items ul{
+.nav-items li{
     padding-top: 12px;
     padding-left: 0;
-}
-
-.nav-items li{
     margin-right: 18px;
     list-style: none;
 }
@@ -34,6 +31,33 @@ header{
     color:black;
     font-size: 18px;
     font-weight: 650;
+}
+
+.nav-items li:hover{
+    background: black;
+    height:100%;
+}
+
+.nav-items a:hover{
+    color:#fff;
+}
+
+.nav{
+    border:none;
+    background: transparent;
+}
+
+.hamburger-menu button{
+    border:none;
+    background: transparent;
+}
+
+.hamburger-menu button:hover{
+    background: black;
+}
+
+.hamburger-menu img:hover{
+    filter: brightness(0) invert(1);
 }
 
 .switch-box{
@@ -87,10 +111,19 @@ header{
     width:150px;
     background: silver;
 }
+
+.cv-btn:hover{
+    background: black;
+}
+
 .cv-btn a{
     text-decoration: none;
     color: black;
     font-weight: 600;
+}
+
+.cv-btn a:hover{
+    color:#fff;
 }
 
 .link-title{
@@ -111,13 +144,17 @@ header{
     z-index:1;
 }
 
-.mid-nav a{
+.btn a{
     text-decoration: none;
     color:black;
     font-weight: 600;
 }
 
-.mid-nav li{
+.btn a:hover{
+    color:#fff;
+}
+
+.mid-nav .btn{
     width: 22%;
     height:36px;
     outline:3px solid black;
@@ -127,6 +164,11 @@ header{
     display: flex;
     justify-content: space-between;
     border-radius: 0;
+}
+
+.btn:hover{
+    background-color: black;
+    color:#fff;
 }
 
 .skill-section{
@@ -163,6 +205,8 @@ img.arrow{
     text-transform:uppercase;
 }
 
+
+
 .pro{
     width:40.5rem;
     height:20.5rem;
@@ -193,6 +237,10 @@ img.arrow{
     border:2px solid black;
 }
 
+.project-heading{
+    padding-left:4.5rem;
+}
+
 @media(max-width:990px){
    .pro{
     width:30rem;
@@ -200,6 +248,10 @@ img.arrow{
 
    .projects{
     margin:0 15rem;
+   }
+
+   .project-heading{
+    padding-left: 8.5rem;
    }
 }
 
@@ -211,7 +263,7 @@ img.arrow{
     .skills-wrapper .row{
         padding:0.8rem;
     }
-    .mid-nav li{
+    .mid-nav .btn{
         width:50%;
         padding:0;
         padding:0.2rem 1rem;
@@ -232,6 +284,9 @@ img.arrow{
 }
 
 @media(max-width:500px){
+    h1,h2,h3{
+        font-size: 1.7rem;
+    }
     .mobile-nav{
         height:30%;
     }
@@ -244,10 +299,6 @@ img.arrow{
         margin-left: 6rem;
     }
 
-    .pro{
-        width:23rem;
-    }
-
     .hero-content{
         width: 400px;
     }
@@ -256,13 +307,21 @@ img.arrow{
         display: block;
     }
     .mid-nav a{
-        font-size: 1.8rem;
+        font-size: 1.7rem;
+    }
+
+    .pro{
+        width:20rem;
+        height:30rem;
     }
 
     .projects{
         margin:0 3rem;
     }
 
+    .project-heading{
+        padding-left:4.5rem;
+    }
 }
 
 @media(max-width:400px){
