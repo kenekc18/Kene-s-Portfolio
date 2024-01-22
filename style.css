@@ -90,7 +90,6 @@ header{
 .hero-img{
     margin-left:1.5rem;
     margin-top: 1.8rem;
-    position: relative;
     left: 10%;
 }
 .hero-profile{
@@ -99,7 +98,7 @@ header{
 
 .hero-txt{
     margin-right: 1.5rem;
-    padding-top: 28px;
+    /* padding-top: 28px; */
 }
 
 .hero-content{
@@ -137,12 +136,12 @@ header{
 .link-wrapper{
     bottom:3.5rem;
     z-index:1;
+    margin:0 4.5rem;
 }
 
-.mid-nav{
-    bottom:1.5rem;
-    z-index:1;
-}
+/* .mid-nav{
+    margin:0 3.5rem;
+} */
 
 .btn a{
     text-decoration: none;
@@ -226,6 +225,10 @@ img.arrow{
     color:#000;
 }
 
+.projects-section{
+    border-bottom:4px solid black;
+}
+
 .pro{
     width:40.5rem;
     height:100%;
@@ -234,7 +237,7 @@ img.arrow{
     box-shadow:6px 6px 0 -1px black;
 }
 
-.project-header{
+.card-header{
     border-bottom:3px solid black;
     height:2.2rem;
     padding-left:0.5rem;
@@ -255,11 +258,11 @@ img.arrow{
     border:2px solid black;
 }
 
-.project-heading{
+.card-heading{
     padding-left:4.5rem;
 }
 
-.project-img{
+.card-img{
     height:100px;
     max-width:100%;
     border-bottom:3px solid black;
@@ -277,12 +280,12 @@ img.arrow{
     background-image: url(./images/Manage\ B\ &\ W.png);
 }
 
-.project-info{
+.card-info{
     background:#fff;
     padding:1.6rem 1.2rem;
 }
 
-.project-info p{
+.card-info p{
     font-size: 0.9rem;
 }
 
@@ -298,6 +301,41 @@ img.arrow{
     padding:0.2rem 0.5rem;
 }
 
+.blog-section{
+    padding:2rem 0;
+    background-color: rgb(236, 232, 232);;
+}
+
+.blog{
+    margin:0;
+}
+
+#blog-01{
+    margin-right:1.8rem;
+}
+
+#blog-02{
+    margin-right: 1.8rem;
+}
+
+.blog-btn{
+    padding:0.2rem 0.5rem;
+    background: silver;
+}
+
+.blog-btn:hover{
+    background: #000;
+}
+
+.blog-btn a{
+    font-weight: 500;
+    text-decoration: none;
+    color:#000;
+}
+
+.blog-btn a:hover{
+    color:#fff;
+}
 
 @media(max-width:990px){
    .pro{
@@ -305,8 +343,12 @@ img.arrow{
     margin-bottom:2rem;
    }
 
-   .projects{
+   /* .projects{
     margin:0 15rem;
+   } */
+
+   .card-heading{
+    padding:0 1rem;
    }
 
    .project-heading{
@@ -323,14 +365,14 @@ img.arrow{
         padding:0.8rem;
     }
     .mid-nav .btn{
-        width:50%;
+        width:57%;
         padding:0;
         padding:0.2rem 1rem;
     }
 
     .link-wrapper{
         margin-left: 9.5rem;
-        bottom: 6rem;
+        bottom: 9rem;
     }
     
     .mid-nav a{
@@ -339,6 +381,14 @@ img.arrow{
 
     .projects{
         margin:0 10rem;
+    }
+
+    .card-heading{
+        padding-left:4.5rem;
+    }
+
+    .blogz-area{
+        margin:0 3rem;
     }
 }
 
@@ -364,6 +414,7 @@ img.arrow{
 
     .hero-img{
         display: block;
+        padding: 1.5rem 0;
     }
     .mid-nav a{
         font-size: 1.7rem;

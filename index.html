@@ -22,7 +22,10 @@
                             <button class="nav"><a href="#" >Works</a></button>
                         </li>
                         <li>
-                            <button class="nav"><a href="#" >Blog</a></button>
+                            <button class="nav"><a href="#" >Skills</a></button>
+                        </li>
+                        <li>
+                            <button class="nav"><a href="#">Blog</a></button>
                         </li>
                         <li>
                             <button class="nav"><a href="#">Contact</a></button>
@@ -44,19 +47,21 @@
                 <h1 class="hero-intro">Hello, <br>I'm Kene O.</h1>
                 <h2 class="job-title">Web Developer & Tech Writer</h2>
                 <p class="hero-content mx-auto mx-lg-0">
-                    I'm a software engineer based in Abuja, Nigeria 
-                    IN specializing in building (and occasionally designing)
-                    exceptional android applications, and everything in between.
+                    Hello, 
+                    My name is Kenechukwu Okeke and I'm a frontend developer and technical writer. 
+                    I am based in Abuja, Nigeria specializing in building 
+                    exceptional web applications, and breaking down concepts in the web and AI 
+                    industry.
                 </p>
                 <button class="cv-btn mx-4 mx-lg-0"><a href="#">Download CV</a></button>
             </div>
-            <div class="hero-img">
+            <div class="hero-img position-relative">
                 <img src="./images/girl banner 1.svg" alt="" class="hero-profile">
             </div>
         </div>
     </section>
     <section class="quick-links d-flex flex-column">
-        <div class="container link-wrapper position-relative">
+        <div class="link-wrapper position-relative">
             <h3 class="link-title">Quick links</h3>
             <ul class="mid-nav d-flex flex-column flex-md-row">
                 <li class="btn">
@@ -65,6 +70,10 @@
                 </li>
                 <li class="btn">
                     <a href="#" >Works</a>
+                    <img src="./icons/_arrow-link-black.svg" alt="" class="arrow">
+                </li>
+                <li class="btn">
+                    <a href="#" >Skills</a>
                     <img src="./icons/_arrow-link-black.svg" alt="" class="arrow">
                 </li>
                 <li class="btn">
@@ -104,24 +113,24 @@
             </div>
         </div>
     </section>
-    <section class="projects-section">
+    <section class="projects-section" id="works">
         <div class="container pt-3">
             <h2 class="project-title">Projects</h2>
         </div>
-        <div class="projects d-flex flex-column flex-lg-row my-3 position-relative ">
+        <div class="projects d-flex flex-column flex-md-row my-3 position-relative ">
             <div class="project-01 pro position-relative">
                 <div class="dark-hover position-absolute">
                     <button class="dark-btn-"><a href="">View Project</a></button>
                 </div>
-                <div class="project-header d-flex">
+                <div class="card-header d-flex">
                     <div class="white-icon">
                         <div class="white-circle"></div>
                         <div class="white-circle"></div>
                     </div>
-                    <div class="project-heading">0215-0425.html</div>
+                    <div class="card-heading">0215-0425.html</div>
                 </div>
-                <div class="project-img" id="project-01-img"></div>
-                <div class="project-info">
+                <div class="card-img" id="project-01-img"></div>
+                <div class="card-info">
                     <h4 class="project-title">Manage website</h4>
                     <p class="project-content">Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
                         Cumque excepturi temporibus tenetur ipsam quasi dicta.</p>
@@ -138,15 +147,15 @@
                 <div class="dark-hover position-absolute">
                     <button class="dark-btn-"><a href="">View Project</a></button>
                 </div>
-                <div class="project-header d-flex">
+                <div class="card-header d-flex">
                     <div class="white-icon">
                         <div class="white-circle"></div>
                         <div class="white-circle"></div>
                     </div>
-                    <div class="project-heading">0135-1438.html</div>
+                    <div class="card-heading">0135-1438.html</div>
                 </div>
-                <div class="project-img" id="project-02-img"></div>
-                <div class="project-info">
+                <div class="card-img" id="project-02-img"></div>
+                <div class="card-info">
                     <h4 class="project-title">URL Shortener</h4>
                     <p class="project-content">Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
                         Cumque excepturi temporibus tenetur ipsam quasi dicta.</p>
@@ -162,15 +171,15 @@
                 <div class="dark-hover position-absolute">
                     <button class="dark-btn-"><a href="">View Project</a></button>
                 </div>
-                <div class="project-header d-flex">
+                <div class="card-header d-flex">
                     <div class="white-icon">
                         <div class="white-circle"></div>
                         <div class="white-circle"></div>
                     </div>
-                    <div class="project-heading">0525-1928.html</div>
+                    <div class="card-heading">0525-1928.html</div>
                 </div>
-                <div class="project-img" id="project-03-img"></div>
-                <div class="project-info">
+                <div class="card-img" id="project-03-img"></div>
+                <div class="card-info">
                     <h4 class="project-title">Fylo Website</h4>
                     <p class="project-content">Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
                         Cumque excepturi temporibus tenetur ipsam quasi dicta.</p>
@@ -183,6 +192,67 @@
             </div>
         </div>
     </section>
+    <section class="blog-section" id="blog">
+        <div class="container">
+            <h2 class="blogs-title">Blogs</h2>
+            <div class="blogz-area d-flex flex-column flex-md-row">
+                <div class="blog pro" id="blog-01">
+                    <div class="card-header d-flex">
+                        <div class="white-icon">
+                            <div class="white-circle"></div>
+                            <div class="white-circle"></div>
+                        </div>
+                        <div class="card-heading">0135-1438-blog.pdf</div>
+                    </div>
+                    <div class="card-img" id="blog-01-img"></div>
+                    <div class="card-info">
+                        <h4 class="project-title">URL Shortener</h4>
+                        <p class="project-content">Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
+                            Cumque excepturi temporibus tenetur ipsam quasi dicta.
+                        </p>
+                        <button class="blog-btn"><a href="">Read Blog</a></button>
+                    </div>
+                </div>
+                <div class="blog pro" id="blog-02">
+                    <div class="card-header d-flex">
+                        <div class="white-icon">
+                            <div class="white-circle"></div>
+                            <div class="white-circle"></div>
+                        </div>
+                        <div class="card-heading">0820-1438-blog.pdf</div>
+                    </div>
+                    <div class="card-img" id="blog-01-img"></div>
+                    <div class="card-info">
+                        <h4 class="project-title">URL Shortener</h4>
+                        <p class="project-content">Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
+                            Cumque excepturi temporibus tenetur ipsam quasi dicta.
+                        </p>
+                        <button class="blog-btn"><a href="">Read Blog</a></button>
+                    </div>
+                </div>
+                <div class="blog pro" id="blog-03">
+                    <div class="card-header d-flex">
+                        <div class="white-icon">
+                            <div class="white-circle"></div>
+                            <div class="white-circle"></div>
+                        </div>
+                        <div class="card-heading">0135-0395-blog.pdf</div>
+                    </div>
+                    <div class="card-img" id="blog-01-img"></div>
+                    <div class="card-info">
+                        <h4 class="project-title">URL Shortener</h4>
+                        <p class="project-content">Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
+                            Cumque excepturi temporibus tenetur ipsam quasi dicta.
+                        </p>
+                        <button class="blog-btn"><a href="">Read Blog</a></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="contact-section">
+        <div class="container"></div>
+    </footer>
     
     
     <script src="./app.js"></script>
