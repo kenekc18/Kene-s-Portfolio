@@ -182,10 +182,16 @@ header{
 
 .tools{
     padding:0;
+    display:grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.tool-skill{
+    margin-right:5.5rem;
 }
 
 .tools-wrapper{
-    justify-content: space-between;
+    display:flex;
 }
 
 .tools li{
@@ -229,8 +235,21 @@ img.arrow{
     border-bottom:4px solid black;
 }
 
-.pro{
-    width:40.5rem;
+.project-wrapper{
+    display: flex;
+}
+
+.projects{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+/* .pro-card{
+    width:30.5rem;
+} */
+
+.-card{
+    /* width:40.5rem; */
     height:100%;
     border: 3px solid black;
     margin:0 1rem;
@@ -338,17 +357,18 @@ img.arrow{
 }
 
 @media(max-width:990px){
-   .pro{
+   .-card{
     width:30rem;
     margin-bottom:2rem;
    }
 
-   /* .projects{
-    margin:0 15rem;
-   } */
-
    .card-heading{
     padding:0 1rem;
+   }
+
+   .projects{
+    grid-template-columns: repeat(2, 1fr);
+    gap:1.5rem;
    }
 
    .project-heading{
@@ -370,18 +390,26 @@ img.arrow{
         padding:0.2rem 1rem;
     }
 
+    .tools{
+        margin-left: 6.5rem;
+    }
+
     .link-wrapper{
-        margin-left: 9.5rem;
-        bottom: 9rem;
+        bottom: 7.5rem;
+        left:15%;
     }
     
     .mid-nav a{
         font-size: 1.5rem;
     }
 
-    .projects{
+    /* .projects{
+        grid-template-columns: repeat(2, 1fr);
+    } */
+
+    /* .projects{
         margin:0 10rem;
-    }
+    } */
 
     .card-heading{
         padding-left:4.5rem;
@@ -405,7 +433,8 @@ img.arrow{
     }
 
     .link-wrapper{
-        margin-left: 6rem;
+        margin-left: 1rem;
+        left:17%;
     }
 
     .hero-content{
@@ -420,9 +449,13 @@ img.arrow{
         font-size: 1.7rem;
     }
 
-    .pro{
+    .-card{
         width:25rem;
         /* height:30rem; */
+    }
+
+    .projects{
+        grid-template-columns:1fr;
     }
 
     .projects{
@@ -442,7 +475,8 @@ img.arrow{
         margin:0 3.5rem;
     }
 
-    .pro{
+    .-card{
         width:20rem;
+        margin: 0.8rem 0.2rem;
     }
 }

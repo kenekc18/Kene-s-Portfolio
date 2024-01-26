@@ -22,9 +22,6 @@
                             <button class="nav"><a href="#" >Works</a></button>
                         </li>
                         <li>
-                            <button class="nav"><a href="#" >Skills</a></button>
-                        </li>
-                        <li>
                             <button class="nav"><a href="#">Blog</a></button>
                         </li>
                         <li>
@@ -73,10 +70,6 @@
                     <img src="./icons/_arrow-link-black.svg" alt="" class="arrow">
                 </li>
                 <li class="btn">
-                    <a href="#" >Skills</a>
-                    <img src="./icons/_arrow-link-black.svg" alt="" class="arrow">
-                </li>
-                <li class="btn">
                     <a href="#" >Blogs</a>
                     <img src="./icons/_arrow-link-black.svg" alt="" class="arrow">
                 </li>
@@ -91,21 +84,21 @@
     <section class="skill-section" id="skills">
         <div class="container skills-wrapper">
             <h2>Skills</h2>
-            <div class="row justify-content-md-center">
-                <ul class="tools d-flex flex-column flex-md-row ">
-                    <li class="col tool-skill html">
+            <div class=" tools-wrapper justify-content-md-center">
+                <ul class="tools">
+                    <li class="tool-skill html">
                         <img src="./icons/icons8-html-5-64.svg" id="html" alt="" class="big-icon">
                         <p class="skill-title">html</p>
                     </li>
-                    <li class="col tool-skill css">
+                    <li class="tool-skill css">
                         <img src="./icons/icons8-css3-100.svg" alt="" class="big-icon">
                         <p class="skill-title">css</p>
                     </li>
-                    <li class="col tool-skill js">
+                    <li class="tool-skill js">
                         <img src="./icons/icons8-javascript-100.svg" alt="" class="big-icon">
                         <p class="skill-title">javascript</p>
                     </li>
-                    <li class="col tool-skill boots">
+                    <li class="tool-skill boots">
                         <img src="./icons/icons8-bootstrap-big.svg" alt="" class="big-icon">
                         <p class="skill-title">bootstrap</p>
                     </li>
@@ -117,8 +110,8 @@
         <div class="container pt-3">
             <h2 class="project-title">Projects</h2>
         </div>
-        <div class="projects d-flex flex-column flex-md-row my-3 position-relative ">
-            <div class="project-01 pro position-relative">
+        <div class="projects my-3 position-relative ">
+            <div class="pro-card -card position-relative" id="pro-1">
                 <div class="dark-hover position-absolute">
                     <button class="dark-btn-"><a href="">View Project</a></button>
                 </div>
@@ -143,7 +136,7 @@
                     </div>
                 </div>
             </div>
-            <div class="project-02 pro position-relative">
+            <div class="pro-card -card position-relative" id="pro-2">
                 <div class="dark-hover position-absolute">
                     <button class="dark-btn-"><a href="">View Project</a></button>
                 </div>
@@ -167,7 +160,7 @@
                     </div>
                 </div>
             </div>
-            <div class="project-03 pro position-relative">
+            <div class="pro-card -card position-relative" id="pro-3">
                 <div class="dark-hover position-absolute">
                     <button class="dark-btn-"><a href="">View Project</a></button>
                 </div>
@@ -190,13 +183,36 @@
                     </div>
                 </div>
             </div>
+            <div class="pro-card -card position-relative" id="pro-4">
+                <div class="dark-hover position-absolute">
+                    <button class="dark-btn-"><a href="">View Project</a></button>
+                </div>
+                <div class="card-header d-flex">
+                    <div class="white-icon">
+                        <div class="white-circle"></div>
+                        <div class="white-circle"></div>
+                    </div>
+                    <div class="card-heading">0135-1438.html</div>
+                </div>
+                <div class="card-img" id="project-02-img"></div>
+                <div class="card-info">
+                    <h4 class="project-title">URL Shortener</h4>
+                    <p class="project-content">Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
+                        Cumque excepturi temporibus tenetur ipsam quasi dicta.</p>
+                    <div class="tools-used d-flex">
+                        <button class="pro-tool">HTML</button>
+                        <button  class="pro-tool">CSS</button>
+                        <button  class="pro-tool">Javascript</button>
+                        <button  class="pro-tool">Bootstrap</button>
+                    </div>
+                </div>
         </div>
     </section>
     <section class="blog-section" id="blog">
         <div class="container">
             <h2 class="blogs-title">Blogs</h2>
             <div class="blogz-area d-flex flex-column flex-md-row">
-                <div class="blog pro" id="blog-01">
+                <div class="blog -card" id="blog-01">
                     <div class="card-header d-flex">
                         <div class="white-icon">
                             <div class="white-circle"></div>
@@ -213,7 +229,7 @@
                         <button class="blog-btn"><a href="">Read Blog</a></button>
                     </div>
                 </div>
-                <div class="blog pro" id="blog-02">
+                <div class="blog -card" id="blog-02">
                     <div class="card-header d-flex">
                         <div class="white-icon">
                             <div class="white-circle"></div>
@@ -230,7 +246,7 @@
                         <button class="blog-btn"><a href="">Read Blog</a></button>
                     </div>
                 </div>
-                <div class="blog pro" id="blog-03">
+                <div class="blog -card" id="blog-03">
                     <div class="card-header d-flex">
                         <div class="white-icon">
                             <div class="white-circle"></div>
