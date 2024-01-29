@@ -1,12 +1,12 @@
-let cards = document.querySelectorAll(".-card");
+let card_container = document.querySelectorAll(".projects");
 let dark_hover = document.querySelector(".dark-hover");
 
-cards.forEach(card => {
-    card.addEventListener('mouseover', () => {
+card_container.forEach(item => {
+    item.addEventListener('mouseover', () => {
         dark_hover.style.display = 'block';
     });
 
-    card.addEventListener('mouseout', () => {
+    item.addEventListener('mouseout', () => {
         dark_hover.style.display = 'none';
     });
 });
