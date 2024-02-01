@@ -16,13 +16,13 @@
                     <ul class="d-flex ">
                         <li>
                             
-                            <button class="nav"><a href="#" >About</a></button>
+                            <button class="nav"><a href="#about" >About</a></button>
                         </li>
                         <li>
-                            <button class="nav"><a href="#" >Works</a></button>
+                            <button class="nav"><a href="#works" >Works</a></button>
                         </li>
                         <li>
-                            <button class="nav"><a href="#">Blog</a></button>
+                            <button class="nav"><a href="#blogs">Blogs</a></button>
                         </li>
                         <li>
                             <button class="nav"><a href="#">Contact</a></button>
@@ -50,7 +50,9 @@
                     exceptional web applications, and breaking down concepts in the web and AI 
                     industry.
                 </p>
-                <button class="cv-btn mx-4 mx-lg-0"><a href="#">Download CV</a></button>
+                <button class="cv-btn mx-4 mx-lg-0">
+                    <a href="https://drive.google.com/file/d/1WfJP-UrySaGSUg9MiQjydrlOUPtxTJFJ/view?usp=sharing">Download CV</a>
+                </button>
             </div>
             <div class="hero-img position-relative">
                 <img src="./images/girl banner 1.svg" alt="" class="hero-profile">
@@ -62,15 +64,15 @@
             <h3 class="link-title">Quick links</h3>
             <ul class="mid-nav d-flex flex-column flex-md-row">
                 <li class="btn">
-                    <a href="#" >About</a>
+                    <a href="#about" >About</a>
                     <img src="./icons/_arrow-link-black.svg" alt="" class="arrow">
                 </li>
                 <li class="btn">
-                    <a href="#" >Works</a>
+                    <a href="#works" >Works</a>
                     <img src="./icons/_arrow-link-black.svg" alt="" class="arrow">
                 </li>
                 <li class="btn">
-                    <a href="#" >Blogs</a>
+                    <a href="#blogs" >Blogs</a>
                     <img src="./icons/_arrow-link-black.svg" alt="" class="arrow">
                 </li>
                 <li class="btn">
@@ -110,131 +112,142 @@
         <div class="container pt-3">
             <h2 class="project-title">Projects</h2>
         </div>
-        <div class="projects-wrapper">
-            <div class="projects my-3 position-relative ">
-                <div class="pro-card -card position-relative" id="pro-1">
-                    <div class="dark-hover position-absolute">
-                        <button class="dark-btn-"><a href="">View Project</a></button>
-                    </div>
-                    <div class="card-header d-flex">
-                        <div class="white-icon">
-                            <div class="white-circle"></div>
-                            <div class="white-circle"></div>
+        <div class="carosuel-block position-relative">
+            <img src="./icons/back-arrow-96.png" alt="arrow" class="card-arrow d-none d-md-block" id="left">
+            <!-- <img src="./icons/back-arrow-64.png" alt="arrow-small" class="card-arrow d-block d-md-none arrow"> -->
+            <div class="projects-wrapper">
+                <div class="projects my-3 position-relative ">
+                    <div class="pro-card -card position-relative" id="pro-1">
+                        <div class="dark-hover position-absolute">
+                            <button class="dark-btn-">
+                                <a href="https://manage-website-sooty.vercel.app/">View Project</a>
+                            </button>
                         </div>
-                        <div class="card-heading">0215-0425.html</div>
+                        <div class="card-header d-flex">
+                            <div class="white-icon">
+                                <div class="white-circle"></div>
+                                <div class="white-circle"></div>
+                            </div>
+                            <div class="card-heading">0215-0425.html</div>
+                        </div>
+                        <div class="card-img" id="project-01-img"></div>
+                        <div class="card-info">
+                            <h4 class="project-title">Manage website</h4>
+                            <p class="project-content">Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
+                                Cumque excepturi temporibus tenetur ipsam quasi dicta.</p>
+                            <div class="tools-used d-flex">
+                                <button  class="pro-tool">HTML</button>
+                                <button  class="pro-tool">CSS</button>
+                                <button  class="pro-tool">Javascript</button>
+                                <button  class="pro-tool">Bootstrap</button>
+                                
+                            </div>
+                        </div>
                     </div>
-                    <div class="card-img" id="project-01-img"></div>
-                    <div class="card-info">
-                        <h4 class="project-title">Manage website</h4>
-                        <p class="project-content">Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
-                            Cumque excepturi temporibus tenetur ipsam quasi dicta.</p>
-                        <div class="tools-used d-flex">
-                            <button  class="pro-tool">HTML</button>
-                            <button  class="pro-tool">CSS</button>
-                            <button  class="pro-tool">Javascript</button>
-                            <button  class="pro-tool">Bootstrap</button>
-                            
+                    <div class="pro-card -card position-relative" id="pro-2">
+                        <div class="dark-hover position-absolute">
+                            <button class="dark-btn-">
+                                <a href="https://url-project-three.vercel.app/">View Project</a>
+                            </button>
+                        </div>
+                        <div class="card-header d-flex">
+                            <div class="white-icon">
+                                <div class="white-circle"></div>
+                                <div class="white-circle"></div>
+                            </div>
+                            <div class="card-heading">0135-1438.html</div>
+                        </div>
+                        <div class="card-img" id="project-02-img"></div>
+                        <div class="card-info">
+                            <h4 class="project-title">URL Shortener</h4>
+                            <p class="project-content">Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
+                                Cumque excepturi temporibus tenetur ipsam quasi dicta.</p>
+                            <div class="tools-used d-flex">
+                                <button class="pro-tool">HTML</button>
+                                <button  class="pro-tool">CSS</button>
+                                <button  class="pro-tool">Javascript</button>
+                                <button  class="pro-tool">Bootstrap</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="pro-card -card position-relative" id="pro-3">
+                        <div class="dark-hover position-absolute">
+                            <button class="dark-btn-"><a href="">View Project</a></button>
+                        </div>
+                        <div class="card-header d-flex">
+                            <div class="white-icon">
+                                <div class="white-circle"></div>
+                                <div class="white-circle"></div>
+                            </div>
+                            <div class="card-heading">0525-1928.html</div>
+                        </div>
+                        <div class="card-img" id="project-03-img"></div>
+                        <div class="card-info">
+                            <h4 class="project-title">Fylo Website</h4>
+                            <p class="project-content">Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
+                                Cumque excepturi temporibus tenetur ipsam quasi dicta.</p>
+                            <div class="tools-used d-flex">
+                                <button  class="pro-tool">Bootstrap</button>
+                                <button  class="pro-tool">Bootstrap</button>
+                                <button  class="pro-tool">Bootstrap</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="pro-card -card position-relative" id="pro-4">
+                        <div class="dark-hover position-absolute">
+                            <button class="dark-btn-"><a href="">View Project</a></button>
+                        </div>
+                        <div class="card-header d-flex">
+                            <div class="white-icon">
+                                <div class="white-circle"></div>
+                                <div class="white-circle"></div>
+                            </div>
+                            <div class="card-heading">0135-1438.html</div>
+                        </div>
+                        <div class="card-img" id="project-02-img"></div>
+                        <div class="card-info">
+                            <h4 class="project-title">Weather App</h4>
+                            <p class="project-content">Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
+                                Cumque excepturi temporibus tenetur ipsam quasi dicta.</p>
+                            <div class="tools-used d-flex">
+                                <button class="pro-tool">HTML</button>
+                                <button  class="pro-tool">CSS</button>
+                                <button  class="pro-tool">Javascript</button>
+                                <button  class="pro-tool">Bootstrap</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="pro-card -card position-relative" id="pro-5">
+                        <div class="dark-hover position-absolute">
+                            <button class="dark-btn-"><a href="">View Project</a></button>
+                        </div>
+                        <div class="card-header d-flex">
+                            <div class="white-icon">
+                                <div class="white-circle"></div>
+                                <div class="white-circle"></div>
+                            </div>
+                            <div class="card-heading">0135-1438.html</div>
+                        </div>
+                        <div class="card-img" id="project-02-img"></div>
+                        <div class="card-info">
+                            <h4 class="project-title">Insurance Page</h4>
+                            <p class="project-content">Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
+                                Cumque excepturi temporibus tenetur ipsam quasi dicta.</p>
+                            <div class="tools-used d-flex">
+                                <button class="pro-tool">HTML</button>
+                                <button  class="pro-tool">CSS</button>
+                                <button  class="pro-tool">Javascript</button>
+                                <button  class="pro-tool">Bootstrap</button>
+                            </div>
                         </div>
                     </div>
                 </div>
-                <div class="pro-card -card position-relative" id="pro-2">
-                    <div class="dark-hover position-absolute">
-                        <button class="dark-btn-"><a href="">View Project</a></button>
-                    </div>
-                    <div class="card-header d-flex">
-                        <div class="white-icon">
-                            <div class="white-circle"></div>
-                            <div class="white-circle"></div>
-                        </div>
-                        <div class="card-heading">0135-1438.html</div>
-                    </div>
-                    <div class="card-img" id="project-02-img"></div>
-                    <div class="card-info">
-                        <h4 class="project-title">URL Shortener</h4>
-                        <p class="project-content">Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
-                            Cumque excepturi temporibus tenetur ipsam quasi dicta.</p>
-                        <div class="tools-used d-flex">
-                            <button class="pro-tool">HTML</button>
-                            <button  class="pro-tool">CSS</button>
-                            <button  class="pro-tool">Javascript</button>
-                            <button  class="pro-tool">Bootstrap</button>
-                        </div>
-                    </div>
-                </div>
-                <div class="pro-card -card position-relative" id="pro-3">
-                    <div class="dark-hover position-absolute">
-                        <button class="dark-btn-"><a href="">View Project</a></button>
-                    </div>
-                    <div class="card-header d-flex">
-                        <div class="white-icon">
-                            <div class="white-circle"></div>
-                            <div class="white-circle"></div>
-                        </div>
-                        <div class="card-heading">0525-1928.html</div>
-                    </div>
-                    <div class="card-img" id="project-03-img"></div>
-                    <div class="card-info">
-                        <h4 class="project-title">Fylo Website</h4>
-                        <p class="project-content">Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
-                            Cumque excepturi temporibus tenetur ipsam quasi dicta.</p>
-                        <div class="tools-used d-flex">
-                            <button  class="pro-tool">Bootstrap</button>
-                            <button  class="pro-tool">Bootstrap</button>
-                            <button  class="pro-tool">Bootstrap</button>
-                        </div>
-                    </div>
-                </div>
-                <div class="pro-card -card position-relative" id="pro-4">
-                    <div class="dark-hover position-absolute">
-                        <button class="dark-btn-"><a href="">View Project</a></button>
-                    </div>
-                    <div class="card-header d-flex">
-                        <div class="white-icon">
-                            <div class="white-circle"></div>
-                            <div class="white-circle"></div>
-                        </div>
-                        <div class="card-heading">0135-1438.html</div>
-                    </div>
-                    <div class="card-img" id="project-02-img"></div>
-                    <div class="card-info">
-                        <h4 class="project-title">Weather App</h4>
-                        <p class="project-content">Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
-                            Cumque excepturi temporibus tenetur ipsam quasi dicta.</p>
-                        <div class="tools-used d-flex">
-                            <button class="pro-tool">HTML</button>
-                            <button  class="pro-tool">CSS</button>
-                            <button  class="pro-tool">Javascript</button>
-                            <button  class="pro-tool">Bootstrap</button>
-                        </div>
-                    </div>
-                </div>
-                <div class="pro-card -card position-relative" id="pro-5">
-                    <div class="dark-hover position-absolute">
-                        <button class="dark-btn-"><a href="">View Project</a></button>
-                    </div>
-                    <div class="card-header d-flex">
-                        <div class="white-icon">
-                            <div class="white-circle"></div>
-                            <div class="white-circle"></div>
-                        </div>
-                        <div class="card-heading">0135-1438.html</div>
-                    </div>
-                    <div class="card-img" id="project-02-img"></div>
-                    <div class="card-info">
-                        <h4 class="project-title">Insurance Page</h4>
-                        <p class="project-content">Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
-                            Cumque excepturi temporibus tenetur ipsam quasi dicta.</p>
-                        <div class="tools-used d-flex">
-                            <button class="pro-tool">HTML</button>
-                            <button  class="pro-tool">CSS</button>
-                            <button  class="pro-tool">Javascript</button>
-                            <button  class="pro-tool">Bootstrap</button>
-                        </div>
-                    </div>
             </div>
+            <img src="./icons/forward-arrow-96.png" alt="arrow" class="card-arrow d-none d-md-block" id="right">
+            <!-- <img src="./icons/forward-arrow-64.png" alt="arrow-small" class="card-arrow d-block d-md-none"> -->
         </div>
     </section>
-    <section class="blog-section" id="blog">
+    <section class="blog-section" id="blogs">
         <div class="container">
             <h2 class="blogs-title">Blogs</h2>
             <div class="blogz-area d-flex flex-column flex-md-row">
@@ -248,11 +261,13 @@
                     </div>
                     <div class="card-img" id="blog-01-img"></div>
                     <div class="card-info">
-                        <h4 class="project-title">URL Shortener</h4>
+                        <h4 class="project-title">Perform Sentiment Analysis on Tweets Using Python</h4>
                         <p class="project-content">Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
                             Cumque excepturi temporibus tenetur ipsam quasi dicta.
                         </p>
-                        <button class="blog-btn"><a href="">Read Blog</a></button>
+                        <button class="blog-btn">
+                            <a href="https://plainenglish.io/blog/perform-sentiment-analysis-on-tweets-using-python">Read Blog</a>
+                        </button>
                     </div>
                 </div>
                 <div class="blog -card" id="blog-02">
