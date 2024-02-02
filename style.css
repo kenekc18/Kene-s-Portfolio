@@ -381,7 +381,7 @@ img.card-arrow{
 
 @media(max-width:990px){
    .-card{
-    /* width:80%; */
+    width:80%;
     margin-bottom:1rem;
    }
 
@@ -393,9 +393,9 @@ img.card-arrow{
     grid-auto-columns: calc((100% /2) - 9px);
    }
 
-   .project-heading{
+   /* .project-heading{
     padding-left: 8.5rem;
-   }
+   } */
 }
 
 @media(max-width:768px){
@@ -416,6 +416,10 @@ img.card-arrow{
         margin-left: 6.5rem;
     }
 
+    .tools-used{
+        padding-bottom:1rem;
+    }
+
     .link-wrapper{
         bottom: 7.5rem;
         left:15%;
@@ -425,12 +429,31 @@ img.card-arrow{
         font-size: 1.5rem;
     }
 
-    /* .-card{
-        width:95%;
-    } */
-
     .card-heading{
         padding-left:4.5rem;
+    }
+
+    .-card:hover .dark-hover{
+        display:none;
+    }
+
+    .card-btn{
+        border:none;
+        margin:0 auto;
+        padding:0.7rem 0.8rem;
+    }
+
+    .card-btn:hover{
+        background-color: black;
+    }
+
+    .card-btn > a{
+        text-decoration:none;
+        color:black;
+    }
+
+    .card-btn > a:hover{
+        color:#fff;
     }
 
     .blogz-area{
@@ -473,7 +496,6 @@ img.card-arrow{
     }
 
     .projects{
-        margin:0 3rem;
         grid-auto-columns: 100%;
     }
 
