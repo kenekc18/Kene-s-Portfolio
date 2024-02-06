@@ -272,9 +272,9 @@ img.arrow{
     border-bottom:4px solid black;
 }
 
-.projects-wrapper{
+/* .projects-wrapper{
     display: flex;
-}
+} */
 
 .projects{
     display: grid;
@@ -405,6 +405,7 @@ img.card-arrow{
 
 .blog{
     margin:0;
+    max-width:100%!important;
 }
 
 #blog-01{
@@ -458,12 +459,6 @@ img.card-arrow{
    }
 }
 
-/* @media(max-width:800px){
-    .dark-btn-{
-        display:none;
-    } 
-} */
-
 @media(max-width:768px){
     .skills-wrapper{
         padding-top: 3rem;
@@ -476,6 +471,10 @@ img.card-arrow{
         width:57%;
         padding:0;
         padding:0.2rem 1rem;
+    }
+
+    .pro-card{
+        width:60%;
     }
 
     .tools{
@@ -546,7 +545,7 @@ img.card-arrow{
 
     .hero-img{
         left:8%;
-        width:60%;
+        width:70%;
     }
 
     .tools{
@@ -573,6 +572,12 @@ img.card-arrow{
 
     .projects{
         grid-auto-columns: 100%;
+        
+       
+    }
+
+    .-card{
+        max-width:35%;
     }
 
     .project-heading{
