@@ -19,7 +19,7 @@
                             <button class="nav"><a href="#about" >About</a></button>
                         </li>
                         <li>
-                            <button class="nav"><a href="#works" >Works</a></button>
+                            <button class="nav"><a href="#works" >Projects</a></button>
                         </li>
                         <li>
                             <button class="nav"><a href="#blogs">Blogs</a></button>
@@ -32,14 +32,21 @@
             </div>
         </nav>
         <nav class="mobile-nav nav-section d-block d-lg-none">
-            <div class="container hamburger-menu">
-                <button><img src="./icons/icons8-harmburger-64.svg" alt="menu"></button>
+            <div class="hamburger-menu d-flex justify-content-end">
+                <button class="hamburger-btn"><img src="./icons/icons8-harmburger-64.svg" alt="menu"></button>
             </div>
+            <ul class="mobile-items">
+                <li><a href="">About</a></li>
+                <li><a href="">Projects</a></li>
+                <li><a href="">Blogs</a></li>
+                <li><a href="">Contact</a></li>
+
+            </ul>
         </nav>
     </header>
 
     <section class="hero-section" id="about">
-        <div class="container d-flex flex-column flex-lg-row">
+        <div class="container hero-wrapper d-flex flex-column flex-lg-row">
             <div class="hero-txt text-center text-lg-start">
                 <h1 class="hero-intro">Hello, <br>I'm Kene O.</h1>
                 <h2 class="job-title">Web Developer & Tech Writer</h2>
@@ -55,7 +62,7 @@
                 </button>
             </div>
             <div class="hero-img position-relative">
-                <img src="./images/girl banner 1.svg" alt="" class="hero-profile">
+                <img src="./images/girl banner 1.svg" alt="">
             </div>
         </div>
     </section>
@@ -68,7 +75,7 @@
                     <img src="./icons/_arrow-link-black.svg" alt="" class="arrow">
                 </li>
                 <li class="btn">
-                    <a href="#works" >Works</a>
+                    <a href="#works" >Projects</a>
                     <img src="./icons/_arrow-link-black.svg" alt="" class="arrow">
                 </li>
                 <li class="btn">
@@ -113,7 +120,7 @@
             <h2 class="project-title">Projects</h2>
         </div>
         <div class="carosuel-block position-relative">
-            <img src="./icons/back-arrow-96.png" alt="arrow" class="card-arrow d-none d-md-block" id="left">
+            <img src="./icons/back-arrow-96.png" alt="arrow" class="card-arrow" id="left">
             <!-- <img src="./icons/back-arrow-64.png" alt="arrow-small" class="card-arrow d-block d-md-none arrow"> -->
             <div class="projects-wrapper">
                 <div class="projects my-3 position-relative ">
@@ -143,7 +150,7 @@
                                 <button  class="pro-tool">Bootstrap</button>  
                             </div>
                             <button class="card-btn d-block d-lg-none">
-                                <a href="">View Project</a>
+                                <a href="https://manage-website-sooty.vercel.app/">View Project</a>
                             </button>
                         </div>
                     </div>
@@ -172,7 +179,7 @@
                                 <button  class="pro-tool">Bootstrap</button>
                             </div>
                             <button class="card-btn d-block d-lg-none">
-                                <a href="">View Project</a>
+                                <a href="https://url-project-three.vercel.app/">View Project</a>
                             </button>
                         </div>
                     </div>
@@ -197,6 +204,9 @@
                                 <button  class="pro-tool">Bootstrap</button>
                                 <button  class="pro-tool">Bootstrap</button>
                             </div>
+                            <button class="card-btn d-block d-lg-none">
+                                <a href="https://url-project-three.vercel.app/">View Project</a>
+                            </button>
                         </div>
                     </div>
                     <div class="pro-card -card position-relative" id="pro-4">
@@ -221,6 +231,9 @@
                                 <button  class="pro-tool">Javascript</button>
                                 <button  class="pro-tool">Bootstrap</button>
                             </div>
+                            <button class="card-btn d-block d-lg-none">
+                                <a href="https://url-project-three.vercel.app/">View Project</a>
+                            </button>
                         </div>
                     </div>
                     <div class="pro-card -card position-relative" id="pro-5">
@@ -245,11 +258,14 @@
                                 <button  class="pro-tool">Javascript</button>
                                 <button  class="pro-tool">Bootstrap</button>
                             </div>
+                            <button class="card-btn d-block d-lg-none">
+                                <a href="https://url-project-three.vercel.app/">View Project</a>
+                            </button>
                         </div>
                     </div>
                 </div>
             </div>
-            <img src="./icons/forward-arrow-96.png" alt="arrow" class="card-arrow d-none d-md-block" id="right">
+            <img src="./icons/forward-arrow-96.png" alt="arrow" class="card-arrow" id="right">
             <!-- <img src="./icons/forward-arrow-64.png" alt="arrow-small" class="card-arrow d-block d-md-none"> -->
         </div>
     </section>
