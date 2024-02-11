@@ -119,7 +119,7 @@
         <div class="container pt-3">
             <h2 class="project-title">Projects</h2>
         </div>
-        <div class="carosuel-block position-relative">
+        <div class="carosuel-block">
             <img src="./icons/back-arrow-96.png" alt="arrow" class="card-arrow" id="left">
             <!-- <img src="./icons/back-arrow-64.png" alt="arrow-small" class="card-arrow d-block d-md-none arrow"> -->
             <div class="projects-wrapper">
@@ -272,7 +272,7 @@
     <section class="blog-section" id="blogs">
         <div class="container">
             <h2 class="blogs-title">Blogs</h2>
-            <div class="blogz-area d-flex flex-column flex-md-row">
+            <div class="blogz-area">
                 <div class="blog -card" id="blog-01">
                     <div class="card-header d-flex">
                         <div class="white-icon">
@@ -302,7 +302,7 @@
                     </div>
                     <div class="card-img" id="blog-01-img"></div>
                     <div class="card-info">
-                        <h4 class="project-title">URL Shortener</h4>
+                        <h4 class="project-title">DOM Manipulation for Newbies</h4>
                         <p class="project-content">Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
                             Cumque excepturi temporibus tenetur ipsam quasi dicta.
                         </p>
@@ -330,7 +330,42 @@
         </div>
     </section>
     <footer class="contact-section">
-        <div class="container"></div>
+        <div class="container">
+            <h2 class="contact-title">Contact</h2>
+        </div>
+        <div class="contact-wrapper d-flex justify-content-center">
+            <div class="contact -card">
+                <div class="card-header d-flex">
+                    <div class="white-icon">
+                        <div class="white-circle"></div>
+                        <div class="white-circle"></div>
+                    </div>
+                    <div class="card-heading">contact.html</div>
+                </div>
+                <div class="card_contact-info">
+                    <p class="contact-heading">Say hi</p>
+                    <p class="contact-txt">Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
+                        Blanditiis voluptatum minima exercitationem, voluptates excepturi adipisci assumenda iste cumque dolore ratione ipsa fuga!
+                    </p>
+                </div>
+                <form class="contact-form">
+                    <div class="d-flex short-forms">
+                        <div class="name-form f-form">
+                            <label for="name">Your Name</label>
+                            <input type="text" name="name" placeholder="Name">
+                        </div>
+                        <div class="email-form f-form">
+                            <label for="name">Your email</label>
+                            <input type="text" name="email" placeholder="Email">
+                        </div>
+                    </div>
+                    <div class="message-form f-form">
+                        <label for="name">Message</label>
+                        <textarea name="message" id="message" cols="20" rows="7"></textarea>
+                    </div>
+                </form>
+            </div>
+        </div>
     </footer>
     
     

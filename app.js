@@ -9,3 +9,6 @@ NavBtn.addEventListener('click', ()=>{
 NavBtn.addEventListener('dblclick', ()=>{
     smallNavItems.classList.remove('d-mobile-items');
 })
+
+// CAROSUEL FUNCTION
+
