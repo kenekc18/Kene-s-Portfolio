@@ -443,11 +443,11 @@ img.card-arrow{
 }
 
 .contact{
-    width:70%;
+    width:50%;
 }
 
-.card_contact-info{
-    padding: 0 1.2rem;
+.card-txt{
+    padding:0 2rem;
 }
 
 .contact-heading{
@@ -457,7 +457,7 @@ img.card-arrow{
 }
 
 .contact-form{
-    padding: 0 1.2rem;
+    padding-bottom:2rem;
 }
 
 .f-form{
@@ -472,10 +472,36 @@ label{
 .f-form input, textarea{
     border:3px solid black;
     background-color: silver;
+    padding:0.5rem 0.8rem;
+}
+
+textarea{
+    width:90%;
 }
 
 .short-forms{
-    gap:1.5rem
+    gap:1.5rem;
+    padding-bottom: 1rem;
+}
+
+/* .short-forms input{
+    width:90%;
+} */
+
+.message-form{
+    padding-bottom:1rem;
+}
+
+.submit-btn{
+    background-color: silver;
+    border:3px solid black;
+    padding: 0.5rem 0.6rem;
+    font-weight: 600;
+}
+
+.submit-btn:hover{
+     background-color: #000;
+     color:#fff;
 }
 
 @media(max-width:992px){
@@ -486,7 +512,6 @@ label{
    .-card{
     margin-bottom:1rem;
    }
-
 
    .card-heading{
     padding:0 1rem;
@@ -504,6 +529,14 @@ label{
     grid-template-columns: repeat(2, 1fr);
    }
 
+   .contact{
+    width:80%;
+   }
+
+   .short-forms{
+    margin-right:1rem;
+   }
+
 }
 
 @media(max-width:768px){
@@ -519,10 +552,6 @@ label{
         padding:0;
         padding:0.2rem 1rem;
     }
-
-    /* .pro-card{
-        width:60%;
-    } */
 
     .tools{
         margin-left: 6.5rem;
@@ -576,6 +605,10 @@ label{
     .dark-btn-{
         display:block;
     }
+
+    .short-forms input{
+        width:90%;
+    }
 }
 
 @media(max-width:590px){
@@ -625,8 +658,16 @@ label{
         padding-left:4.5rem;
     }
 
+    /* .card-info{
+        height: 60%;
+    } */
+
     .blogz-area{
         grid-template-columns:1fr;
+    }
+
+    .contact{
+        width:100%;
     }
 }
 
