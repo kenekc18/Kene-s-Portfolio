@@ -295,11 +295,18 @@ img.arrow{
 }
 
 .card-arrow{
-   position:sticky;
-   z-index:2;
+   position:absolute;
+   /* z-index:2; */
    display:flex;
    justify-content: center;
-   width:120px;
+   cursor:pointer;
+   z-index:10;
+   /* width:120px; */
+}
+
+.card-arrow:hover{
+    background: #00000056;
+    border-radius:1rem;
 }
 
 img.card-arrow{
@@ -307,13 +314,15 @@ img.card-arrow{
 }
 
 #left{
-    top: 105px;
-    left: -17px
+    transform: translate(0, -50%);
+    top: 50%;
+    left:0;
 }
 
 #right{
-    bottom: 68px;
-    right: -24px;
+    transform: translate(0, -50%);
+    top: 50%;;
+    right:0;
 }
 
 .-card{
