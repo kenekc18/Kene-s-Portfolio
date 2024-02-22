@@ -6,6 +6,16 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <link rel="stylesheet" href="./style.css">
     <link href="https://fonts.cdnfonts.com/css/baloo-thambi-2" rel="stylesheet">
+    <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+    </script>
+    <script type="text/javascript">
+    (function(){
+        emailjs.init({
+            publicKey: "xPEK5_-EVz9-Gyz1V",
+        });
+    })();
+    </script>
     <title>Kene's portfolio</title>
 </head>
 <body>
@@ -25,7 +35,7 @@
                             <button class="nav"><a href="#blogs">Blogs</a></button>
                         </li>
                         <li>
-                            <button class="nav"><a href="#">Contact</a></button>
+                            <button class="nav"><a href="#contact">Contact</a></button>
                         </li>
                     </ul>
                 </div>
@@ -58,7 +68,7 @@
                     industry.
                 </p>
                 <button class="cv-btn mx-4 mx-lg-0">
-                    <a href="https://drive.google.com/file/d/1WfJP-UrySaGSUg9MiQjydrlOUPtxTJFJ/view?usp=sharing">Download CV</a>
+                    <a href="https://drive.google.com/file/d/1WfJP-UrySaGSUg9MiQjydrlOUPtxTJFJ/view?usp=sharing" target="_blank">Download CV</a>
                 </button>
             </div>
             <div class="hero-img position-relative">
@@ -126,7 +136,7 @@
                     <div class="pro-card -card position-relative" id="pro-1">
                         <div class="dark-hover position-absolute">
                             <button class="dark-btn-">
-                                <a href="https://manage-website-sooty.vercel.app/">View Project</a>
+                                <a href="https://manage-website-sooty.vercel.app/" target="_blank">View Project</a>
                             </button>
                         </div>
                         <div class="card-header d-flex">
@@ -149,14 +159,14 @@
                                 <button  class="pro-tool">Bootstrap</button>  
                             </div>
                             <button class="card-btn d-block d-lg-none">
-                                <a href="https://manage-website-sooty.vercel.app/">View Project</a>
+                                <a href="https://manage-website-sooty.vercel.app/" target="_blank">View Project</a>
                             </button>
                         </div>
                     </div>
                     <div class="pro-card -card position-relative" id="pro-2">
                         <div class="dark-hover position-absolute">
                             <button class="dark-btn-">
-                                <a href="https://url-project-three.vercel.app/">View Project</a>
+                                <a href="https://url-project-three.vercel.app/" target="_blank">View Project</a>
                             </button>
                         </div>
                         <div class="card-header d-flex">
@@ -178,7 +188,7 @@
                                 <button  class="pro-tool">Bootstrap</button>
                             </div>
                             <button class="card-btn d-block d-lg-none">
-                                <a href="https://url-project-three.vercel.app/">View Project</a>
+                                <a href="https://url-project-three.vercel.app/" target="_blank">View Project</a>
                             </button>
                         </div>
                     </div>
@@ -327,7 +337,7 @@
             </div>
         </div>
     </section>
-    <footer class="contact-section">
+    <footer class="contact-section d-flex flex-column" id="contact">
         <div class="container">
             <h2 class="contact-title">Contact</h2>
         </div>
@@ -347,27 +357,36 @@
                             Blanditiis voluptatum minima exercitationem, voluptates excepturi adipisci assumenda iste cumque dolore ratione ipsa fuga!
                         </p>
                     </div>
-                    <form class="contact-form" action="https://formsubmit.co/irisokeke@gmail.com" method="POST">
-                        <input type="hidden" name="_next" value="https://https://https://kenes-portfolio.vercel.app//pages/success.html">
-                        <input type="hidden" name="_captcha" value="false">
+                    <form class="contact-form">
                         <div class="d-flex flex-column flex-md-row short-forms">
                             <div class="name-form f-form">
                                 <label for="name">Your Name</label>
-                                <input type="text" name="name" placeholder="Name">
+                                <input type="text" id="name" placeholder="Name" name="sender_name" autocomplete="on">
                             </div>
                             <div class="email-form f-form">
                                 <label for="name">Your email</label>
-                                <input type="text" name="email" placeholder="Email">
+                                <input type="text" id="email" placeholder="Email" name="sender_email" autocomplete="on">
                             </div>
                         </div>
                         <div class="message-form f-form">
                             <label for="name">Message</label>
-                            <textarea name="message" id="message" cols="15" rows="3" placeholder="Your message"></textarea>
+                            <textarea name="message" id="message" cols="15" rows="3" placeholder="Your message" name="message"></textarea>
                         </div>
                         <button type="submit" class="submit-btn">Submit</button>
                     </form>
                 </div>
             </div>
+        </div>
+        <div class="social_links d-flex justify-content-center">
+            <a href="https://github.com/kenekc18" target="_blank" class="media_link">
+                <img src="./icons/social_link/icons8-github-64.svg" alt="" class="soc_media">
+            </a>
+            <a href="https://www.linkedin.com/in/kenechukwu-okeke-8106261b2/" target="_blank" class="media_link">
+                <img src="./icons/social_link/icons8-linkedin-96.png" alt="" class="soc_media">
+            </a>
+            <a href="https://twitter.com/alexis_codes1" target="_blank" class="media_link">
+                <img src="./icons/social_link/icons8-twitterx-96.png" alt="" class="soc_media">
+            </a>
         </div>
     </footer>
     

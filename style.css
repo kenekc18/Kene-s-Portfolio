@@ -1,4 +1,4 @@
-*{
+* {
     margin:0;
     padding:0;
     box-sizing: border-box;
@@ -9,7 +9,7 @@ body{
 }
 
 h1,h2{
-    font-weight: 700;;
+    font-weight: 700;
 }
 
 h3,h4,h5{
@@ -89,6 +89,10 @@ ul.mobile-items{
     border-bottom: 4px solid black;
 }
 
+.mobile-items li:hover{
+    background: #000;
+}
+
 .mobile-items a{
     text-decoration: none;
     color:black;
@@ -96,12 +100,10 @@ ul.mobile-items{
     font-weight: 700;
     font-size: 1.5rem;
 }
-/* .switch-box{
-    height:20px;
-    width:80px;
-    margin:5px 0;
-    border:1px solid black;
-} */
+
+.mobile-items a:hover{
+    color:#fff;
+}
 
 .job-title{
     font-weight: 700;
@@ -513,6 +515,22 @@ textarea{
      color:#fff;
 }
 
+.media_link{
+    margin-right:0.5rem;
+}
+
+.social_links{
+    margin:1.5rem 0;
+}
+
+.soc_media{
+    width:55px
+}
+
+.soc_media img{
+    max-width:100%;
+}
+
 @media(max-width:992px){
     .hero-section{
         border-top:0;
@@ -579,7 +597,6 @@ textarea{
         font-size: 1.5rem;
     }
     
-
     .card-heading{
         padding-left:4.5rem;
     }
@@ -605,6 +622,10 @@ textarea{
 
     .card-btn > a:hover{
         color:#fff;
+    }
+
+    .pro-tool{
+        color:#000;
     }
 
     .blogz-area{
@@ -667,16 +688,21 @@ textarea{
         padding-left:4.5rem;
     }
 
-    /* .card-info{
-        height: 60%;
-    } */
-
     .blogz-area{
         grid-template-columns:1fr;
     }
 
     .contact{
         width:100%;
+    }
+
+    .short-forms{
+        margin-right:0;
+    }
+    
+
+    .soc_media{
+        width:45px
     }
 }
 
