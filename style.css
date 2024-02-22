@@ -378,8 +378,22 @@ img.card-arrow{
 }
 
 #project-03-img{
-    background-image: url(./images/Manage\ B\ &\ W.png);
+    background-image: url(./images/Fylo\ website.jpg);
+    background-size: cover;
+    background-position: top;
+    
 }
+
+#project-04-img{
+    background-image: url(./images/Weather\ App_Website.jpg);
+    background-position: top;
+    background-size: cover;
+}
+
+#project-05-img{
+    background-image:url(./images/Insurance\ website.jpg);
+}
+
 
 .card-info{
     background:#fff;
