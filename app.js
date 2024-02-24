@@ -11,7 +11,7 @@ NavBtn.addEventListener('dblclick', ()=>{
 })
 
 // CAROSUEL FUNCTION
-let carosuel_boxes = document.querySelectorAll('.carosuel-block');
+let carosuel_boxes = document.querySelectorAll('.projects-wrapper');
 let prev_btn = document.querySelector('#left');
 let nxt_btn = document.querySelector('#right');
 

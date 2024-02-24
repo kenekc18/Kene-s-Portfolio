@@ -283,6 +283,7 @@ img.arrow{
 
 .projects-wrapper::-webkit-scrollbar{
     display:none;
+    scroll-behavior: smooth;
 }
 
 .projects{
