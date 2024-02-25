@@ -139,8 +139,7 @@ ul.mobile-items{
 }
 
 .hero-txt{
-    margin-right: 1.5rem;
-    /* padding-top: 28px; */
+    margin:0 0.8rem;
 }
 
 .hero-content{
@@ -279,11 +278,11 @@ img.arrow{
     flex-wrap: nowrap;
     flex-shrink: 1;
     overflow-x: scroll;
+    scroll-behavior: smooth;
 }
 
 .projects-wrapper::-webkit-scrollbar{
     display:none;
-    scroll-behavior: smooth;
 }
 
 .projects{
@@ -433,6 +432,23 @@ img.card-arrow{
     border-bottom:4px solid black;
 }
 
+#blog-01-img{
+    background-image:url(./images/Blog\ 1\ B&W.jpg);
+    background-size: 100% ;
+    background-repeat: no-repeat;
+}
+
+#blog-02-img{
+    background-image:url(./images/Blog\ 2\ BW.jpg);
+    background-size: 100% ;
+}
+
+#blog-03-img{
+    background-image:url(./images/Blog\ 3\ B&W.jpg);
+    background-size: 100%;
+    background-position: center;
+}
+
 .blog{
     width:100%;
 }
@@ -551,9 +567,10 @@ textarea{
         border-top:0;
     }
 
-   .-card{
-    margin-bottom:1rem;
-   }
+    .hero-img{
+        left:50%;
+        transform:translate(-50%, 0);
+    }
 
    .card-heading{
     padding:0 1rem;
@@ -582,6 +599,15 @@ textarea{
 }
 
 @media(max-width:768px){
+    .hero-txt{
+        margin:0 1rem;
+    }
+
+    /* .hero-img{
+        left:50%;
+        transform:translate(-50%, 0);
+    } */
+
     .skills-wrapper{
         padding-top: 3rem;
     }
@@ -669,7 +695,6 @@ textarea{
     }
 
     .hero-img{
-        left:8%;
         width:70%;
     }
 
@@ -684,7 +709,7 @@ textarea{
     }
 
     .hero-content{
-        width: 400px;
+        width: 20rem;
     }
 
     .hero-img{
@@ -715,7 +740,6 @@ textarea{
         margin-right:0;
     }
     
-
     .soc_media{
         width:45px
     }
@@ -725,9 +749,9 @@ textarea{
     .hero-intro{
         font-size:4rem;
     }
-    .hero-content{
+    /* .hero-content{
         margin:0 3.5rem;
-    }
+    } */
 
     .tools{
         margin-left: 5rem;
