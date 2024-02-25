@@ -424,6 +424,7 @@ img.card-arrow{
     display:grid;
     grid-template-columns: repeat(3, 1fr);
     gap:1.8rem;
+    place-items:center;
 }
 
 .blog-section{
